@@ -1,7 +1,5 @@
 # Decentralized Voting System using Blockchain Technology
 
-D
-
 ## System Workflow
 
 A brief explanation on the basic workflow of the application.
@@ -31,29 +29,39 @@ A brief explanation on the basic workflow of the application.
 
    ```shell
    npm install -g truffle
-   npm install -g ganache-cli
+   npm install -g ganache
    ```
 
 1. Install **metamask** browser extension
 
    Download and install metamask from [here](https://metamask.io/download "Go to official metamask download page.").
 
+   For Arch linux:
+
+   ````shell
+    sudo pacman -Syu
+    sudo pacman -S nodejs
+    npm install -g ganache
+    npm install -g truffle
+    ```
+   ````
+
 ### Configuring the project for development
 
 1. Clone this repository
 
    ```shell
-   git clone https://github.com/arlbibek/dVoting.git
-   cd dVoting
+   git clone https://github.com/InfooGeek/Decentralized-Voting-System-using-Blockchain
+   cd Decentralized-Voting-System-using-Blockchain
    ```
 
 1. Run local Ethereum blockchain
 
    ```shell
-   ganache-cli
+   ganache
    ```
 
-   > Note: Do not close `ganache-cli` (the blockchain network needs to be running all the time)
+   > Note: Do not close `ganache` (the blockchain network needs to be running all the time)
 
 1. Configure metamask on the browser with the following details
 
@@ -62,10 +70,17 @@ A brief explanation on the basic workflow of the application.
 
 1. Import account(s) using private keys from ganache-cli to the metamask extension on the browser
 
-1. Deploy smart contract to the (local) blockchain network (i.e ganache-cli)
+1. Deploy smart contract to the (local) blockchain network (i.e ganache)
 
    ```shell
-   # on the dVoting directory
+   #on the root directory
+   truffle console
+   migrate --reset
+   ```
+
+   or
+
+   ```shell
    truffle migrate
    ```
 
@@ -75,7 +90,7 @@ A brief explanation on the basic workflow of the application.
 
    ```shell
    cd client
-   npm install
+   npm install #for the first time to install dependencies
    npm start
    ```
 
@@ -88,3 +103,4 @@ Possible features to add/improve within the app.
 - [ ] **Report**—option to generate a report at the end of an election. The report could contain a range of information including the number of people that were eligible to vote, the number of people that participated in the election, a bar-chart/pie-chart showing the election statistics, etc.
 - [ ] **Workflow improvements**—overall workflow improvements (eg. option to add candidates within the election setup page), with overall GUI improvements.
 - [ ] **Multiple election instance**—ability to create multiple election instances without having to re-deploy the smart contract.
+- [ ] **Use of token to vote instade of native currency**—each voter will get a token on registration-verification, using that they can voter only once, it will remove the use of state/hooks in react and can be easy for the voters as well.
