@@ -38,13 +38,12 @@ A brief explanation on the basic workflow of the application.
 
    For Arch linux:
 
-   ````shell
+   ```shell
     sudo pacman -Syu
     sudo pacman -S nodejs
     npm install -g ganache
     npm install -g truffle
-    ```
-   ````
+   ```
 
 ### Configuring the project for development
 
@@ -104,3 +103,5 @@ Possible features to add/improve within the app.
 - [ ] **Workflow improvements**—overall workflow improvements (eg. option to add candidates within the election setup page), with overall GUI improvements.
 - [ ] **Multiple election instance**—ability to create multiple election instances without having to re-deploy the smart contract.
 - [ ] **Use of token to vote instade of native currency**—each voter will get a token on registration-verification, using that they can voter only once, it will remove the use of state/hooks in react and can be easy for the voters as well.
+
+Made by Yog Raj Dhakal (Loma) - MU
