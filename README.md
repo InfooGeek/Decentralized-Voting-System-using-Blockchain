@@ -1,6 +1,6 @@
 # Decentralized Voting System using Blockchain Technology
 
-# ⚙️ Technology Used
+# Technology Used
 1. Solidity
 2. React, Nodejs
 3. Javascript
