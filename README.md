@@ -1,5 +1,12 @@
 # Decentralized Voting System using Blockchain Technology
 
+# ⚙️ Technology Used
+1. Solidity
+2. React, Nodejs
+3. Javascript
+4. HTML CSS
+5. Truffle and Ganache
+
 ## System Workflow
 
 A brief explanation on the basic workflow of the application.
