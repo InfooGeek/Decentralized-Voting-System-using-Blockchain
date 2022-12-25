@@ -111,7 +111,7 @@ Possible features to add/improve within the app.
 - [ ] **Multiple election instance**—ability to create multiple election instances without having to re-deploy the smart contract.
 - [ ] **Use of token to vote instade of native currency**—each voter will get a token on registration-verification, using that they can voter only once, it will remove the use of state/hooks in react and can be easy for the voters as well.
 
-##License
+## License
 [MIT License](LICENSE)
 
 Made by Yog Raj Dhakal (Loma) - MU
