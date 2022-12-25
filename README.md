@@ -114,4 +114,4 @@ Possible features to add/improve within the app.
 ## License
 [MIT License](LICENSE)
 
-Made by Yog Raj Dhakal (Loma) - MU
+Yog Raj Dhakal (Loma) - MU
